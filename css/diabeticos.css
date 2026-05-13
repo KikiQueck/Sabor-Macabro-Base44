@@ -1,0 +1,69 @@
+/* ====== NOTA IMPORTANTE ====== */
+.nota-wrap {
+  padding: 80px 60px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nota-box {
+  background: rgba(107, 33, 168, 0.12);
+  border: 1px solid rgba(107, 33, 168, 0.35);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.nota-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: rgba(107, 33, 168, 0.25);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--purple-light);
+}
+
+.nota-icon svg { width: 18px; height: 18px; }
+
+.nota-title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--purple-light);
+  margin-bottom: 6px;
+}
+
+.nota-desc {
+  font-family: 'Crimson Text', serif;
+  font-size: 15px;
+  color: var(--gray-400);
+  line-height: 1.7;
+}
+
+/* ====== TAGS ESPECIFICAS ====== */
+.tag-semacucar { background: #1a4a2e; color: #4ade80; }
+.tag-brownie, .tag-mousse, .tag-pudim, .tag-cookie { background: var(--purple); color: var(--white); }
+.tag-lowcarb { background: #1a3a4a; color: #38bdf8; }
+
+/* ====== ANIMATE ====== */
+.animate-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+  .nota-wrap { padding: 80px 24px 0; }
+}

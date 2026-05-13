@@ -1,0 +1,47 @@
+/* ====== RECIPES SECTION ====== */
+.receitas-section { padding-top: 0; }
+
+.receitas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.receitas-grid .recipe-card-img { height: 280px; }
+
+/* ====== RECIPE EXPAND ====== */
+.recipe-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-family: 'Crimson Text', serif;
+  font-size: 15px;
+  color: var(--gray-400);
+  line-height: 1.7;
+}
+
+.recipe-expand.open {
+  max-height: 400px;
+  padding-top: 16px;
+}
+
+.recipe-expand p { margin-bottom: 10px; }
+.recipe-expand p:last-child { margin-bottom: 0; }
+.recipe-expand strong { color: var(--orange); font-weight: 600; }
+
+/* ====== ANIMATE ====== */
+.animate-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .receitas-grid { grid-template-columns: 1fr; }
+}
