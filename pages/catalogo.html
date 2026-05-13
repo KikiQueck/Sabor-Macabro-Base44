@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo — Sabor Macabro</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/catalogo.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar-logo">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+        <circle cx="12" cy="9" r="2.5" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="logo-text">SABOR <span>MACABRO</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar-nav">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="catalogo.html" class="active">Catálogo</a></li>
+      <li><a href="receitas.html">Receitas</a></li>
+      <li><a href="diabeticos.html">Diabéticos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header animate-up">
+    <span class="eyebrow">Catálogo</span>
+    <h1>Galeria de Curiosidades</h1>
+    <p>Cada criação é uma pequena obra de arte sombria. Explore nossos doces amaldiçoados.</p>
+    <div class="divider-dots">
+      <span></span><span class="dot"></span><span></span>
+    </div>
+  </div>
+
+  <!-- FILTERS -->
+  <div class="filters-wrap animate-up">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="bolos">Bolos</button>
+        <button class="filter-btn" data-filter="cupcakes">Cupcakes</button>
+        <button class="filter-btn" data-filter="trufas">Trufas</button>
+        <button class="filter-btn" data-filter="biscoitos">Biscoitos</button>
+        <button class="filter-btn" data-filter="sobremesas">Sobremesas</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATALOG GRID -->
+  <section class="section catalog-section">
+    <div class="container">
+      <div class="catalog-grid">
+
+        <div class="catalog-card product-card animate-up" data-category="cupcakes">
+          <span class="price-badge">R$12,90</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504207680078610442/051eb3d04_generated_8660f504.png?ex=6a062611&is=6a04d491&hm=915735e0a3efd7fb4782c6d0c59149ef72ad5b5433831bc7cd8808a5f5d87717&=&format=webp&quality=lossless" alt="Cupcakes Fantasma" class="product-card-img" style="object-position:0% 10%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Cupcakes Fantasma</h3>
+            <p class="product-card-desc">Buttercream de lavanda com caveiras de açúcar douradas.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="trufas">
+          <span class="price-badge">R$8,50</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504207732129923124/c079ba6d8_generated_5c188854.png?ex=6a06261e&is=6a04d49e&hm=1690cc6fef87a3c8b07b13e3664de95f247dd740d72a349c67de79bde58a2c8a&=&format=webp&quality=lossless"Trufas da Escuridão" class="product-card-img" style="object-position:38% 28%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Trufas da Escuridão</h3>
+            <p class="product-card-desc">Chocolate 70% com frutas vermelhas e pó de violeta.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="sobremesas">
+          <span class="price-badge">R$9,90</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504207770172264588/1a3e5dd33_generated_3ccb7c05.png?ex=6a062627&is=6a04d4a7&hm=ca5111739f6e5fa930e4d7fcea7c52517635db99edcee7a81932c4ffb76f3084&=&format=webp&quality=lossless" alt="Cake Pops Caveira" class="product-card-img" style="object-position:70% 20%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Cake Pops Caveira</h3>
+            <p class="product-card-desc">Bolinhos cobertos com chocolate branco e drizzle de mirtilo.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="biscoitos">
+          <span class="price-badge">R$6,90</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504207811448541367/e214358f1_generated_8f91fa51.png?ex=6a062631&is=6a04d4b1&hm=a556df9539114d7061922d662f3ab061a2cdaeb7f68c5fdb0b6c72fc46b7afbb&=&format=webp&quality=lossless" alt="Biscoitos Teia de Aranha" class="product-card-img" style="object-position:50% 80%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Biscoitos Teia de Aranha</h3>
+            <p class="product-card-desc">Biscoitos de chocolate com glacê real em formato de teias.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="bolos">
+          <span class="price-badge">R$45,00</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504207860500795592/ecdfa7d2a_generated_ce801d34.png?ex=6a06263c&is=6a04d4bc&hm=e92501d9d577f81ecaf14a43d319331acd61a74a485afdedc78ce0bbe8f4e009&=&format=webp&quality=lossless" alt="Torta Eclipse" class="product-card-img" style="object-position:0% 10%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Torta Eclipse</h3>
+            <p class="product-card-desc">Torta de chocolate amargo com glaze espelhado roxo e recheio de laranja.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="sobremesas">
+          <span class="price-badge">R$7,90</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504207893929394206/c7b2eafa7_generated_662bf5e1.png?ex=6a062644&is=6a04d4c4&hm=17f012a4dbf6599a2f8f864c9dc5ebb647d644b957f1e4f5b54be0bf74f23d18&=&format=webp&quality=lossless" alt="Macarons Meia-Noite" class="product-card-img" style="object-position:50% 60%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Macarons Meia-Noite</h3>
+            <p class="product-card-desc">Macarons pretos e roxos com creme de laranja e especiarias.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="sobremesas">
+          <span class="price-badge">R$18,00</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504208045163675770/246b8b55f_generated_2fc6ba51.png?ex=6a062668&is=6a04d4e8&hm=9366c565ad63cd733c60a54a23112653a76ca13ee53ff0f0f1abfde7c8191c25&=&format=webp&quality=lossless" alt="Mousse Sombrio" class="product-card-img" style="object-position:55% 10%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Mousse Sombrio</h3>
+            <p class="product-card-desc">Camadas de mousse de frutas negras, chocolate e creme batido.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame">🔥</span><span class="flame">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-card product-card animate-up" data-category="sobremesas">
+          <span class="price-badge">R$14,00</span>
+          <img src="https://media.discordapp.net/attachments/682045988726243380/1504208124494741564/7048539c5_generated_523fadd7.png?ex=6a06267b&is=6a04d4fb&hm=c61fa6935b52f64bfdc0bdb077fd17822a83efb8aa2f6be4dc14fb0ad0ff679a&=&format=webp&quality=lossless" alt="Pudim Encantado" class="product-card-img" style="object-position:85% 50%;" />
+          <div class="product-card-body">
+            <h3 class="product-card-title">Pudim Encantado</h3>
+            <p class="product-card-desc">Flan cremoso com calda de caramelo sombrio e flor comestível.</p>
+            <div class="sweetness">
+              <span class="sweetness-label">Doçura</span>
+              <div class="flames">
+                <span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span><span class="flame active">🔥</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="navbar-logo" style="margin-bottom:14px;">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="logo-text">SABOR <span>MACABRO</span></span>
+        </div>
+        <p>Confeitaria artesanal com alma gótica. Cada doce é uma obra de arte sombria e deliciosa.</p>
+      </div>
+      <div>
+        <p class="footer-title">Navegação</p>
+        <ul class="footer-links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a href="diabeticos.html">Para Diabéticos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Siga-nos</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="social-email">contato@sabormacabro.com.br</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Feito com <span class="heart">♥</span> e um toque de trevas — © 2026 Sabor Macabro
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.animate-up').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 80);
+      });
+    });
+  </script>
+</body>
+</html>

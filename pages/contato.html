@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Sabor Macabro</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/contato.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="../index.html" class="navbar-logo">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+        <circle cx="12" cy="9" r="2.5" fill="currentColor" stroke="none"/>
+      </svg>
+      <span class="logo-text">SABOR <span>MACABRO</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="navbar-nav">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="receitas.html">Receitas</a></li>
+      <li><a href="diabeticos.html">Diabéticos</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="page-header animate-up">
+    <span class="eyebrow">Comunicação Espiritual</span>
+    <h1>Entre em Contato</h1>
+    <p>Dúvidas, encomendas ou apenas quer conversar sobre doces sombrios? Estamos aqui.</p>
+    <div class="divider-dots">
+      <span></span><span class="dot"></span><span></span>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Cards -->
+        <div class="contact-info animate-up">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <p class="info-label">Endereço</p>
+              <p class="info-value">Rua das Sombras, 666<br>São Paulo, SP</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <p class="info-label">Email</p>
+              <p class="info-value">contato@sabormacabro.com.br</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.08 1.18 2 2 0 012.07 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <p class="info-label">Telefone</p>
+              <p class="info-value">(11) 96666-1313</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap animate-up">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Nome</label>
+                <input type="text" class="form-input" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" placeholder="seu@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Assunto</label>
+              <input type="text" class="form-input" placeholder="Sobre o que deseja falar?" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-input form-textarea" placeholder="Conte-nos seus desejos mais sombrios..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Enviar Mensagem ao Vazio
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="navbar-logo" style="margin-bottom:14px;">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+            <circle cx="12" cy="9" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="logo-text">SABOR <span>MACABRO</span></span>
+        </div>
+        <p>Confeitaria artesanal com alma gótica. Cada doce é uma obra de arte sombria e deliciosa.</p>
+      </div>
+      <div>
+        <p class="footer-title">Navegação</p>
+        <ul class="footer-links">
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="receitas.html">Receitas</a></li>
+          <li><a href="diabeticos.html">Para Diabéticos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Siga-nos</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="#" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="#" class="social-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        </div>
+        <p class="social-email">contato@sabormacabro.com.br</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      Feito com <span class="heart">♥</span> e um toque de trevas — © 2026 Sabor Macabro
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.animate-up').forEach((el, i) => {
+        setTimeout(() => el.classList.add('visible'), i * 120);
+      });
+    });
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn-submit');
+      const original = btn.innerHTML;
+      btn.innerHTML = '✓ Mensagem Enviada ao Vazio!';
+      btn.style.background = '#22c55e';
+      btn.style.color = '#fff';
+      setTimeout(() => {
+        btn.innerHTML = original;
+        btn.style.background = '';
+        btn.style.color = '';
+        e.target.reset();
+      }, 3500);
+    }
+  </script>
+</body>
+</html>
