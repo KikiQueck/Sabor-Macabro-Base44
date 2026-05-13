@@ -41,7 +41,7 @@ CONTEXTO: Desenvolver um site chamado “Sabor Macabro”, uma confeitaria temá
 
 O site está publicado e disponível em ambiente de produção através da infraestrutura da **Vercel**.
 
-🔗 **Clique para acessar:** (https://exerc-cio-stitch-google-sabor-macab.vercel.app)
+🔗 **Clique para acessar:** (https://sabor-macabro-base44.vercel.app/)
 
 ---
 
