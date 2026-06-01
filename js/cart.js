@@ -1,6 +1,6 @@
 // ====== SABOR MACABRO — CARRINHO ======
 (function () {
-  const WHATSAPP_NUMBER = '5511999999999'; // Troque pelo número real
+  const WHATSAPP_NUMBER = '551196666-6666'; // Troque pelo número real
 
   let cart = [];
 
